@@ -7,7 +7,7 @@ const Categories = ({ selectIndustry }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get("/api/categories")
+    axios.get("https://movieapp-backend-f6rz.onrender.com/api/categories")
       .then((res) => {
         setIndustries(res.data);
         setLoading(false);

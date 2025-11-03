@@ -10,7 +10,7 @@ const Genres = ({ industry, selectGenre, goBack }) => {
     if (industry) {
       setLoading(true);
       setError(null);
-      axios.get(`/api/genres/${industry}`)
+      axios.get(`https://movieapp-backend-f6rz.onrender.com/api/genres/${industry}`)
         .then((res) => {
           setGenres(res.data);
           setLoading(false);
