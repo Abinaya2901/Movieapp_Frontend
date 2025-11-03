@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  // Remove baseURL to use relative paths and leverage the proxy in package.json
+  baseURL: 'https://movieapp-backend-f6rz.onrender.com'
 });
 
 export const register = async (email, password) => {
