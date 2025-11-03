@@ -16,7 +16,7 @@ function App() {
   const [genre, setGenre] = useState(null);
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]);
-  const apiUrl = "/api";
+  const apiUrl = "https://movieapp-backend-f6rz.onrender.com/api";
 
   useEffect(() => {
     if (authToken) {
